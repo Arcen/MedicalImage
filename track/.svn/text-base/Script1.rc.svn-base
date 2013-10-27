@@ -1,0 +1,329 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open...\tCtrl+O",             IDM_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Load(XML)\tCtrl+L",           IDM_LOAD
+        MENUITEM "Load As...(XML)\tCtrl+Shift+L", IDM_LOAD_AS
+        MENUITEM "Import From...(XML)\tCtrl+Shift+I", IDM_IMPORT_FROM
+        MENUITEM SEPARATOR
+        MENUITEM "Save(XML)\tCtrl+S",           IDM_SAVE
+        MENUITEM "Save As...(XML)\tCtrl+Shift+S", IDM_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Export Information...(CSV)\tCtrl+X", IDM_EXPORT_INFO
+        MENUITEM "Export Selected Information...(CSV)\tCtrl+Shift+X", 
+                                                IDM_EXPORT_SELECTED_INFO
+        MENUITEM SEPARATOR
+        MENUITEM "Quit\tCtrl+Q",                IDM_QUIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Copy\tCtrl+C",                IDM_COPY
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Play\tCtrl+P",                IDM_PLAY
+        MENUITEM SEPARATOR
+        MENUITEM "Next\tNum+",                  IDM_NEXT
+        MENUITEM "Prev\tNum-",                  IDM_PREV
+        MENUITEM SEPARATOR
+        MENUITEM "Fit\tCtrl+F",                 IDM_FIT
+        MENUITEM SEPARATOR
+        MENUITEM "Scale 1\tCtrl+Num1",          IDM_VS_1
+        MENUITEM "Scale 2\tCtrl+Num2",          IDM_VS_2
+        MENUITEM "Scale 4\tCtrl+Num3",          IDM_VS_4
+        MENUITEM SEPARATOR
+        MENUITEM "Original\tAlt+O",             IDM_VM_ORIGINAL, CHECKED
+        MENUITEM "Vertical Edge\tAlt+V",        IDM_VM_VERTEDGE, CHECKED
+        MENUITEM "Horizontal Edge\tAlt+H",      IDM_VM_HORZEDGE, CHECKED
+        MENUITEM "No Image\tAlt+N",             IDM_VM_NONE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Vertical\tV",                 IDM_VM_V, CHECKED
+        MENUITEM "Horizontal\tH",               IDM_VM_H, CHECKED
+        MENUITEM "Descent\tD",                  IDM_VM_D, CHECKED
+        MENUITEM "Ascent\tA",                   IDM_VM_A, CHECKED
+    END
+    POPUP "Setting"
+    BEGIN
+        MENUITEM "Normal Mode\tCtrl+N",         IDM_NORMALMODE
+        MENUITEM SEPARATOR
+        MENUITEM "Set Base Respiratory Pattern\tAlt+B", IDM_SETBASEWAVE
+        MENUITEM "Edit Base Respiratory Pattern\tCtrl+B", IDM_EDITBASEWAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Define Base Time\tAlt+D",     IDM_SETBASETIME
+        MENUITEM "Display Base Time\tCtrl+D",   IDM_GETBASETIME
+        MENUITEM SEPARATOR
+        MENUITEM "Define Inspiration Frame\tAlt+I", IDM_SETINSPIRATIONFRAME
+        MENUITEM "View Inspiration Frame\tCtrl+I", IDM_GETINSPIRATIONFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "Define Expiration Frame\tAlt+E", IDM_SETEXPIRATIONFRAME
+        MENUITEM "View Expiration Frame\tCtrl+E", IDM_GETEXPIRATIONFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "Write Curve\tCtrl+W",         IDM_WRITECURVE
+        MENUITEM "Edit Curve\tCtrl+M",          IDM_EDITCURVE
+        MENUITEM "Divide Curve\tCtrl+U",        IDM_DIVIDECURVE
+        MENUITEM "Clear Curves\tCtrl+K",        IDM_CLEARCURVES
+        MENUITEM SEPARATOR
+        MENUITEM "Again Analysis\tCtrl+R",      IDM_AGAIN_ANALYSIS
+        MENUITEM SEPARATOR
+        MENUITEM "Show/Hide Curve\tCtrl+H",     ID_SHOW_CURVE
+    END
+    POPUP "Analysis"
+    BEGIN
+        MENUITEM "All\tCtrl+A",                 IDM_A_ALL
+        MENUITEM "All by statistics",           IDM_A_ALLS
+        MENUITEM "Clear",                       IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Vertical",                    IDM_A_V
+        MENUITEM "Horizontal",                  IDM_A_H
+        MENUITEM "Descent",                     IDM_A_D
+        MENUITEM "Ascent",                      IDM_A_A
+        MENUITEM SEPARATOR
+        MENUITEM "Vertical by statistics",      IDM_A_VS
+        MENUITEM "Horizontal by statistics",    IDM_A_HS
+        MENUITEM "Descent by statistics",       IDM_A_DS
+        MENUITEM "Ascent by statistics",        IDM_A_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Flickers",                    IDM_A_BLOOD_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Degree of coincidence",       IDM_ANALYSIS_DOC
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDM_VM_A,               VIRTKEY, NOINVERT
+    "A",            IDM_A_ALL,              VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_EDITBASEWAVE,       VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_SETBASEWAVE,        VIRTKEY, ALT, NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_VM_D,               VIRTKEY, NOINVERT
+    "D",            IDM_GETBASETIME,        VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_SETBASETIME,        VIRTKEY, ALT, NOINVERT
+    "E",            IDM_GETEXPIRATIONFRAME, VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SETEXPIRATIONFRAME, VIRTKEY, ALT, NOINVERT
+    "F",            IDM_FIT,                VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_VM_H,               VIRTKEY, NOINVERT
+    "H",            ID_SHOW_CURVE,          VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_VM_HORZEDGE,        VIRTKEY, ALT, NOINVERT
+    "I",            IDM_GETINSPIRATIONFRAME, VIRTKEY, CONTROL, NOINVERT
+    "I",            IDM_SETINSPIRATIONFRAME, VIRTKEY, ALT, NOINVERT
+    "I",            IDM_IMPORT_FROM,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "K",            IDM_CLEARCURVES,        VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_LOAD,               VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_LOAD_AS,            VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "M",            IDM_EDITCURVE,          VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_NORMALMODE,         VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_VM_NONE,            VIRTKEY, ALT, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_VM_ORIGINAL,        VIRTKEY, ALT, NOINVERT
+    "P",            IDM_PLAY,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_QUIT,               VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_AGAIN_ANALYSIS,     VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE_AS,            VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "U",            IDM_DIVIDECURVE,        VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_VM_V,               VIRTKEY, NOINVERT
+    "V",            IDM_VM_VERTEDGE,        VIRTKEY, ALT, NOINVERT
+    VK_ADD,         IDM_NEXT,               VIRTKEY, NOINVERT
+    VK_NUMPAD1,     IDM_VS_1,               VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD2,     IDM_VS_2,               VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD3,     IDM_VS_4,               VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    IDM_PREV,               VIRTKEY, NOINVERT
+    "W",            IDM_WRITECURVE,         VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_EXPORT_INFO,        VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_EXPORT_SELECTED_INFO, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON40029
+    BUTTON      ID_BUTTON40038
+    BUTTON      ID_BUTTON_PLAY
+    BUTTON      ID_BUTTON_SETBASEWAVE
+    BUTTON      ID_BUTTON_EDITBASEWAVE
+    BUTTON      ID_BUTTON40030
+    BUTTON      ID_BUTTON40062
+    BUTTON      ID_BUTTON40060
+    BUTTON      ID_BUTTON40061
+    BUTTON      ID_BUTTON40035
+    BUTTON      ID_BUTTON40031
+    BUTTON      ID_BUTTON40071
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SET_ATTRIBUTE DIALOG DISCARDABLE  0, 0, 169, 79
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Set Attribute"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,30,50,14
+    GROUPBOX        "Type",IDC_STATIC,5,5,100,30
+    COMBOBOX        IDC_COMBO_TYPE,10,15,90,110,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Index",IDC_STATIC,5,40,100,30
+    EDITTEXT        IDC_EDIT_INDEX,10,50,90,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DICOM_SERIES DIALOG DISCARDABLE  0, 0, 171, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ÉVÉäÅ[ÉYëIë"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,135,50,15
+    PUSHBUTTON      "∑¨›æŸ",IDCANCEL,60,135,50,15
+    LISTBOX         IDC_LIST_SERIES,5,7,155,83,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_START,40,95,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "äJénà íu",IDC_STATIC,5,95,30,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MAXIMUM,120,95,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ç≈ëÂñáêî",IDC_STATIC,85,95,30,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPACE,120,115,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ÉXÉâÉCÉXä‘äu",IDC_STATIC,85,115,30,15,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_SET_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DICOM_SERIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_RELEASE             CURSOR  DISCARDABLE     "release.cur"
+IDC_APPEND              CURSOR  DISCARDABLE     "append.cur"
+IDC_POINTER             CURSOR  DISCARDABLE     "pointer.cur"
+#endif    // ì˙ñ{åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,171 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// “ú–{Œê resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "File(F)"
+    BEGIN
+        MENUITEM "Open(O)\tCtrl+O",             IDM_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Close(C)\tCtrl+W",            IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Quit(Q)\tCtrl+Q",             IDM_QUIT
+    END
+    POPUP "View(V)"
+    BEGIN
+        MENUITEM "Contrast\tCtrl+T",            IDM_CONTRAST
+        MENUITEM SEPARATOR
+        MENUITEM "Fit\tCtrl+F",                 IDM_FIT
+        MENUITEM SEPARATOR
+        MENUITEM "Hide/Show Attribute\tCtrl+A", IDM_ATTRIBUTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ELEMENTS DIALOGEX 0, 0, 155, 314
+STYLE WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dicom Attributes"
+FONT 9, "‚l‚r ‚oƒSƒVƒbƒN"
+BEGIN
+    CONTROL         "Tree1",IDC_ELEMENTS,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_TABSTOP,7,7,141,300
+END
+
+IDD_CONTRAST DIALOG DISCARDABLE  0, 0, 154, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Contrast"
+FONT 9, "‚l‚r ‚oƒSƒVƒbƒN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,30,50,14
+    LTEXT           "Center",IDC_STATIC,10,5,25,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_CENTER,40,5,45,15,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,10,30,25,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_WIDTH,40,30,45,15,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDM_ATTRIBUTE,          VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_FIT,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_QUIT,               VIRTKEY, CONTROL, NOINVERT
+    "T",            IDM_CONTRAST,           VIRTKEY, CONTROL, NOINVERT
+    "W",            IDM_CLOSE,              VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ELEMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_CONTRAST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+#endif    // “ú–{Œê resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

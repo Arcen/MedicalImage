@@ -1,0 +1,201 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "開く(&O)\tCtrl+O",            40002
+        MENUITEM "閉じる(&W)\tCtrl+W",          IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "読み込み...(&L)\tCtrl+L",     IDM_LOAD_AS
+        MENUITEM "ラベル画像読み込み...(&D)\tCtrl+D", IDM_LOAD_LABEL_AS
+        MENUITEM SEPARATOR
+        MENUITEM "保存(&S)\tCtrl+S",            IDM_SAVE
+        MENUITEM "保存...(&A)\tCtrl+Shift+S",   IDM_SAVE_AS
+        MENUITEM "標本ヒストグラム保存(&H)\tCtrl+H", IDM_SAVE_HISTOGRAM
+        MENUITEM "３Dシーングラフ保存",         IDM_SAVE_GRAPH
+        MENUITEM SEPARATOR
+        MENUITEM "教師パターン読み込み...",     IDM_LOAD_PATTERN
+        MENUITEM "教師パターン追加...",         IDM_ADD_PATTERN
+        MENUITEM "教師パターン保存...",         IDM_SAVE_PATTERN
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&Q)\tCtrl+Q",            IDM_QUIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "取り消し(&U)\tCtrl+Z",        IDM_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Shift+Z",  IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "取り消しの削除(C)\tCtrl+B",   IDM_CLEAR_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "画像のコピー(O)\tCtrl+C",     IDM_COPY
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "上のスライスへ移動\tCtrl++",  IDM_VIEW_NEXT_SLICE
+        MENUITEM "下のスライスへ移動\tCtrl+-",  IDM_VIEW_PREV_SLICE
+        MENUITEM SEPARATOR
+        MENUITEM "human領域\tCtrl+1",           IDM_VIEW_HUMAN
+        MENUITEM "lung領域\tCtrl+2",            IDM_VIEW_LUNG
+        MENUITEM "normal領域\tCtrl+3",          IDM_VIEW_NORMAL
+        MENUITEM SEPARATOR
+        MENUITEM "CT画像＋形状\tCtrl+Num1",     IDM_VIEW_MIX
+        MENUITEM "CT画像\tCtrl+Num2",           IDM_VIEW_ORIGINAL
+        MENUITEM "形状\tCtrl+Num3",             IDM_VIEW_LABEL
+        MENUITEM SEPARATOR
+        MENUITEM "左右両方\tCtrl+Num5",         IDM_VIEW_BOTH
+        MENUITEM "左側\tCtrl+Num4",             IDM_VIEW_LEFT
+        MENUITEM "右側\tCtrl+Num6",             IDM_VIEW_RIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "カメラ位置の初期化\tCtrl+I",  IDM_VIEW_CAMERA_INITIALIZE
+        MENUITEM "カメラの回転\tCtrl+R",        IDM_VIEW_CAMERA_ROTATION
+    END
+    POPUP "半自動処理(&P)"
+    BEGIN
+        MENUITEM "CT値のキャリブレーション",    IDM_OPERATION_CALIBRATION
+        MENUITEM "ガウシアンフィルタの標準偏差", IDM_OPERATION_GAUSSIAN_SD
+        MENUITEM "現在のスライスより上の小さい肺野領域削除", 
+                                                IDM_OPERATION_REMOVE_SMALL_LUNG_REGION
+
+        MENUITEM "網状領域抽出",                IDM_ANALYSIS_RECOGNITION_NETLIKE
+
+        MENUITEM SEPARATOR
+        MENUITEM "閾値処理による領域分割",      IDM_OPERATION_DIVIDEREGION_THRESHHOLD
+
+        MENUITEM "SmoothedDifference検定による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE
+
+        MENUITEM "KolmogorovSmirnov検定による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_KOLMOGOROVSMIRNOV
+        , GRAYED
+        MENUITEM "ガウシアンヒストグラム相関による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_CORRELATION
+
+        MENUITEM "正規化ガウシアンヒストグラム相関による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION
+
+        MENUITEM "エッジ情報を含む正規化ガウシアンヒストグラム相関による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_WITH_EDGE
+
+        MENUITEM "多解像度ガウシアンヒストグラム相関による領域分割", 
+                                                IDM_OPERATION_DIVIDEREGION_MULTI_CORRELATION
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "閾値処理による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_THRESHHOLD_SINGLE_SLICE
+
+        MENUITEM "SmoothedDifference検定による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE_SINGLE_SLICE
+
+        MENUITEM "KolmogorovSmirnov検定による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_KOLMOGOROVSMIRNOV_SINGLE_SLICE
+        , GRAYED
+        MENUITEM "ガウシアンヒストグラム相関による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_CORRELATION_SINGLE_SLICE
+
+        MENUITEM "正規化ガウシアンヒストグラム相関による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_SINGLE_SLICE
+
+        MENUITEM "エッジ情報を含む正規化ガウシアンヒストグラム相関による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_WITH_EDGE_SINGLE_SLICE
+
+        MENUITEM "多解像度ガウシアンヒストグラム相関による領域分割（現スライス）", 
+                                                IDM_OPERATION_DIVIDEREGION_MULTI_CORRELATION_SINGLE_SLICE
+
+        MENUITEM SEPARATOR
+        MENUITEM "SGC：多設定値検証",           IDM_OPERATION_DIVIDEREGION_CORRELATION_MULTI_PARAM
+        , GRAYED
+        MENUITEM "SD：多設定値検証",            IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE_MULTI_PARAM
+        , GRAYED
+    END
+    POPUP "解析(&A)"
+    BEGIN
+        MENUITEM "正答率解析（正解を読み込む(Ctrl押下時別処理)...）", 
+                                                IDM_ANALYSIS
+        MENUITEM "平均・分散計算（指定領域・指定スライス）", 
+                                                IDM_ANALYSIS_VARIANCE_AVERAGE
+
+        MENUITEM "ヒストグラム書き出し（指定領域・指定スライス）", 
+                                                IDM_ANALYSIS_SAVE_HISTOGRAM
+        MENUITEM "分布書き出し（指定領域・指定スライス）", 
+                                                IDM_ANALYSIS_SAVE_DISTORIBUTION
+
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,585 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "開く(&O)\tCtrl+O",              IDM_OPEN
+        MENUITEM "閉じる(&W)\tCtrl+W",             IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "読み込み...(&L)\tCtrl+L",         IDM_LOAD_AS
+        MENUITEM SEPARATOR
+        MENUITEM "保存(&S)\tCtrl+S",              IDM_SAVE
+        MENUITEM "保存...(&A)\tCtrl+Shift+S",     IDM_SAVE_AS
+        MENUITEM "標本ヒストグラム保存(&H)\tCtrl+H",      IDM_SAVE_HISTOGRAM
+        MENUITEM "３Dシーングラフ保存",                  IDM_SAVE_GRAPH
+        MENUITEM SEPARATOR
+        MENUITEM "教師パターン読み込み...",               IDM_LOAD_PATTERN
+        MENUITEM "教師パターン追加...",                 IDM_ADD_PATTERN
+        MENUITEM "教師パターン保存...",                 IDM_SAVE_PATTERN
+        MENUITEM "教師パターン設定書き出し...",             IDM_SAVE_PATTERN_SETTING
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&Q)\tCtrl+Q",              IDM_QUIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "取り消し(&U)\tCtrl+Z",            IDM_UNDO
+        MENUITEM "やり直し(&R)\tCtrl+Shift+Z",      IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "取り消しの削除(C)\tCtrl+B",          IDM_CLEAR_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "画像のコピー(O)\tCtrl+C",           IDM_COPY
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "上のスライスへ移動\tCtrl++",           IDM_VIEW_NEXT_SLICE
+        MENUITEM "下のスライスへ移動\tCtrl+-",           IDM_VIEW_PREV_SLICE
+        MENUITEM SEPARATOR
+        MENUITEM "human領域\tCtrl+1",             IDM_VIEW_HUMAN
+        MENUITEM "lung領域\tCtrl+2",              IDM_VIEW_LUNG
+        MENUITEM "normal領域\tCtrl+3",            IDM_VIEW_NORMAL
+        MENUITEM SEPARATOR
+        MENUITEM "CT画像＋形状\tCtrl+Num1",          IDM_VIEW_MIX
+        MENUITEM "CT画像\tCtrl+Num2",             IDM_VIEW_ORIGINAL
+        MENUITEM "形状\tCtrl+Num3",               IDM_VIEW_LABEL
+        MENUITEM SEPARATOR
+        MENUITEM "左右両方\tCtrl+Num5",             IDM_VIEW_BOTH
+        MENUITEM "左側\tCtrl+Num4",               IDM_VIEW_LEFT
+        MENUITEM "右側\tCtrl+Num6",               IDM_VIEW_RIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "等倍表示\tCtrl+Num7",             IDM_VIEW_TIMES1
+        MENUITEM "２倍表示\tCtrl+Num8",             IDM_VIEW_TIMES2
+        MENUITEM "４倍表示\tCtrl+Num9",             IDM_VIEW_TIMES4
+        MENUITEM "画面サイズ調整\tCtrl+F",             IDM_VIEW_FIT
+        MENUITEM SEPARATOR
+        MENUITEM "カメラ位置の初期化\tCtrl+I",           IDM_VIEW_CAMERA_INITIALIZE
+        MENUITEM "カメラの回転\tCtrl+R",              IDM_VIEW_CAMERA_ROTATION
+    END
+    POPUP "半自動処理(&P)"
+    BEGIN
+        MENUITEM "CT値のキャリブレーション",               IDM_OPERATION_CALIBRATION
+        MENUITEM "ガウシアンフィルタの標準偏差",              IDM_OPERATION_GAUSSIAN_SD
+        MENUITEM "現在のスライスから頭側で中央の小さい肺野領域削除",    IDM_OPERATION_REMOVE_SMALL_LUNG_REGION
+        MENUITEM "網状領域抽出",                      IDM_ANALYSIS_RECOGNITION_NETLIKE
+        MENUITEM "肺野領域抽出",                      IDM_ANALYSIS_LUNG
+        MENUITEM SEPARATOR
+        MENUITEM "閾値処理による領域分割",                 IDM_OPERATION_DIVIDEREGION_THRESHHOLD
+        MENUITEM "SmoothedDifference検定による領域分割", IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE
+        MENUITEM "KolmogorovSmirnov検定による領域分割",  IDM_OPERATION_DIVIDEREGION_KOLMOGOROVSMIRNOV, GRAYED
+        MENUITEM "ガウシアンヒストグラム相関による領域分割",        IDM_OPERATION_DIVIDEREGION_CORRELATION
+        MENUITEM "正規化ガウシアンヒストグラム相関による領域分割",     IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION
+        MENUITEM "エッジ情報を含む正規化ガウシアンヒストグラム相関による領域分割", IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_WITH_EDGE
+        MENUITEM "多解像度ガウシアンヒストグラム相関による領域分割",    IDM_OPERATION_DIVIDEREGION_MULTI_CORRELATION
+        MENUITEM "多解像度正規化ガウシアンヒストグラム相関による領域分割", IDM_OPERATION_DIVIDEREGION_MULTI_NORMALIZED_CORRELATION
+        MENUITEM SEPARATOR
+        MENUITEM "閾値処理による領域分割（現スライス）",          IDM_OPERATION_DIVIDEREGION_THRESHHOLD_SINGLE_SLICE
+        MENUITEM "SmoothedDifference検定による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE_SINGLE_SLICE
+        MENUITEM "KolmogorovSmirnov検定による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_KOLMOGOROVSMIRNOV_SINGLE_SLICE, GRAYED
+        MENUITEM "ガウシアンヒストグラム相関による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_CORRELATION_SINGLE_SLICE
+        MENUITEM "正規化ガウシアンヒストグラム相関による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_SINGLE_SLICE
+        MENUITEM "エッジ情報を含む正規化ガウシアンヒストグラム相関による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_NORMALIZED_CORRELATION_WITH_EDGE_SINGLE_SLICE
+        MENUITEM "多解像度ガウシアンヒストグラム相関による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_MULTI_CORRELATION_SINGLE_SLICE
+        MENUITEM "多解像度正規化ガウシアンヒストグラム相関による領域分割（現スライス）", IDM_OPERATION_DIVIDEREGION_MULTI_NORMALIZED_CORRELATION_SINGLE_SLICE
+        MENUITEM SEPARATOR
+        MENUITEM "SGC：多設定値検証",                  IDM_OPERATION_DIVIDEREGION_CORRELATION_MULTI_PARAM, GRAYED
+        MENUITEM "SD：多設定値検証",                   IDM_OPERATION_DIVIDEREGION_SMOOTHEDDIFFERENCE_MULTI_PARAM, GRAYED
+    END
+    POPUP "解析(&A)"
+    BEGIN
+        MENUITEM "正答率解析（正解を読み込む(Ctrl押下時別処理)...）", IDM_ANALYSIS
+        MENUITEM "平均・分散計算（指定領域・指定スライス，教師画像）",   IDM_ANALYSIS_VARIANCE_AVERAGE
+        MENUITEM "ヒストグラム書き出し（指定領域・指定スライス，教師画像）", IDM_ANALYSIS_SAVE_HISTOGRAM
+        MENUITEM "分布書き出し（指定領域・指定スライス）",         IDM_ANALYSIS_SAVE_DISTORIBUTION
+        MENUITEM "情報保存",                        IDM_ANALYSIS_SAVE_INFORMATION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "1",            IDM_VIEW_HUMAN,         VIRTKEY, CONTROL, NOINVERT
+    "2",            IDM_VIEW_LUNG,          VIRTKEY, CONTROL, NOINVERT
+    "3",            IDM_VIEW_NORMAL,        VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_CLEAR_UNDO,         VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_LOAD_LABEL_AS,      VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_VIEW_FIT,           VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_SAVE_HISTOGRAM,     VIRTKEY, CONTROL, NOINVERT
+    "I",            IDM_VIEW_CAMERA_INITIALIZE, VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_LOAD_AS,            VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_QUIT,               VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_VIEW_CAMERA_ROTATION, VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE_AS,            VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_ADD,         IDM_VIEW_NEXT_SLICE,    VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD1,     IDM_VIEW_MIX,           VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD2,     IDM_VIEW_ORIGINAL,      VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD3,     IDM_VIEW_LABEL,         VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD4,     IDM_VIEW_LEFT,          VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD5,     IDM_VIEW_BOTH,          VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD6,     IDM_VIEW_RIGHT,         VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD7,     IDM_VIEW_TIMES1,        VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD8,     IDM_VIEW_TIMES2,        VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD9,     IDM_VIEW_TIMES4,        VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    IDM_VIEW_PREV_SLICE,    VIRTKEY, CONTROL, NOINVERT
+    "W",            IDM_CLOSE,              VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_REDO,               VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTROL DIALOG  0, 0, 146, 342
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,5,5,135,330
+END
+
+IDD_SHEET_VIEW DIALOGEX 0, 0, 125, 323
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "表示モード",IDC_STATIC,5,40,115,30,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_VIEWMODE,10,50,50,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SIDE,65,50,50,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_SLICE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,15,55,15,WS_EX_TRANSPARENT
+    GROUPBOX        "スライス",IDC_STATIC,5,5,115,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SLICE,65,15,50,15,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_SIZE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,125,50,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SIZE,65,125,45,15,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_LEVEL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,161,50,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_LEVEL,65,160,45,15,ES_AUTOHSCROLL
+    CONTROL         "随時更新",IDC_UPDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,185,43,10
+    GROUPBOX        "ＣＴ値のウィンドウ幅",IDC_STATIC,10,115,105,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "ＣＴ値のウィンドウレベル",IDC_STATIC,10,151,105,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "ＣＴ値のウィンドウ",IDC_STATIC,5,105,115,95,0,WS_EX_TRANSPARENT
+    GROUPBOX        "３次元表示",IDC_STATIC,5,75,115,25,0,WS_EX_TRANSPARENT
+    CONTROL         "スライス３次元表示",IDC_CHECK_3D,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,72,10
+    GROUPBOX        "ＣＴ画像の属性",IDC_STATIC,5,205,115,75,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_CTATTRIBUTE,10,215,105,40,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "変更",IDC_CHANGE_CTATTRIBUTE,65,260,50,14
+END
+
+IDD_SHEET_REGION DIALOGEX 0, 0, 125, 301
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "対象領域",IDC_STATIC,5,5,115,30,0,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_SLIDER_EXTRACT_UPLIMIT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,25,97,50,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_EXTRACT_UPLIMIT,75,97,40,15,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_EXTRACT_DOWNLIMIT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,25,115,50,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_EXTRACT_DOWNLIMIT,75,115,40,15,ES_AUTOHSCROLL
+    CONTROL         "プレビュー",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,65,40,8
+    PUSHBUTTON      "抽出",IDC_BUTTON_EXTRACT,65,135,50,15
+    GROUPBOX        "領域修正（closing-opening）",IDC_STATIC,5,161,115,65,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "修正",IDC_BUTTON_MODIFY,65,205,50,15
+    GROUPBOX        "closing",IDC_STATIC,10,171,50,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_MODIFY_CLOSING,15,181,40,15,ES_AUTOHSCROLL
+    GROUPBOX        "opening",IDC_STATIC,65,171,50,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_MODIFY_OPENING,70,181,40,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "中止",IDC_BUTTON_EXTRACT_STOP,10,135,50,15
+    CONTROL         "全体",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,50,40,10
+    PUSHBUTTON      "中止",IDC_BUTTON_MODIFY_STOP,10,205,50,15
+    GROUPBOX        "領域抽出（閾値）",IDC_STATIC,5,85,115,70,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_TARGET,10,15,105,141,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ブラシによる修正",IDC_STATIC,5,231,115,44,0,WS_EX_TRANSPARENT
+    LTEXT           "上限",IDC_STATIC,10,97,15,15,SS_CENTERIMAGE
+    LTEXT           "下限",IDC_STATIC,10,117,15,15,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER_BRUSH,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,10,241,75,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_BRUSH,85,241,30,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_OPERATION_MODE,10,50,48,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "処理モード",IDC_STATIC,5,40,115,40,0,WS_EX_TRANSPARENT
+    CONTROL         "有効",IDC_BRUSH_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,260,30,10
+END
+
+IDD_COLOR_PICKER DIALOGEX 0, 0, 149, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "色選択"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_CONTROL,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,15,15,105,WS_EX_TRANSPARENT
+    CONTROL         "赤",IDC_RADIO_RED,"Button",BS_AUTORADIOBUTTON,100,20,23,10
+    CONTROL         "緑",IDC_RADIO_GREEN,"Button",BS_AUTORADIOBUTTON,100,35,23,10
+    CONTROL         "青",IDC_RADIO_BLUE,"Button",BS_AUTORADIOBUTTON,100,50,23,10
+    CONTROL         "色相",IDC_RADIO_HUE,"Button",BS_AUTORADIOBUTTON,100,65,30,10
+    CONTROL         "色彩",IDC_RADIO_SATURATION,"Button",BS_AUTORADIOBUTTON,100,80,30,10
+    CONTROL         "輝度",IDC_RADIO_VALUE,"Button",BS_AUTORADIOBUTTON,100,95,30,10
+    CONTROL         "不透明度",IDC_RADIO_ALPHA,"Button",BS_AUTORADIOBUTTON,100,110,43,10
+    EDITTEXT        IDC_EDIT_NAME,10,15,60,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_ORIGINAL_COLOR,"Button",BS_OWNERDRAW | BS_FLAT,10,50,60,15,WS_EX_STATICEDGE
+    CONTROL         "",IDC_CURRENT_COLOR,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,10,85,60,15,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "OK",IDOK,5,110,30,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,45,110,30,14
+    GROUPBOX        "対象名",IDC_STATIC,5,5,70,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "変更前の色",IDC_STATIC,5,40,70,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "現在の色",IDC_STATIC,5,75,70,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "調整",IDC_STATIC,80,5,65,120,0,WS_EX_TRANSPARENT
+    GROUPBOX        "色見本",IDC_STATIC,85,5,15,120,NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_COLOR_PICKER,"Button",BS_OWNERDRAW | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,90,15,6,105,WS_EX_STATICEDGE
+    CONTROL         "",IDC_COLOR_CONTROL,"Button",BS_OWNERDRAW | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,85,15,15,105,WS_EX_STATICEDGE
+END
+
+IDD_SHEET_ATTRIBUTE DIALOGEX 0, 0, 125, 316
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "領域の色・不透明度",IDC_STATIC,10,230,105,30,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_REGION_COLOR,"Button",BS_OWNERDRAW | BS_FLAT,15,240,45,15,WS_EX_STATICEDGE
+    GROUPBOX        "対象領域",IDC_STATIC,5,5,115,125,0,WS_EX_TRANSPARENT
+    CONTROL         "Tree1",IDC_TREE_REGION,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | WS_TABSTOP,10,15,105,110,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_REGION_ALPHA,"Button",BS_OWNERDRAW | BS_FLAT,65,240,45,15,WS_EX_STATICEDGE
+    GROUPBOX        "現スライスの面積・全スライスの体積",IDC_STATIC,5,270,115,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_AREA,10,280,50,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_VOLUME,65,280,50,15,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "教師情報の平均値と標準偏差",IDC_STATIC,10,200,105,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_AVERAGE,15,210,45,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_STANDARD_DEVIATION,65,210,45,15,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "教師情報",IDC_STATIC,5,135,115,130,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "削除",IDC_BUTTON_DELETE_PATTERN,65,165,50,14
+    EDITTEXT        IDC_EDIT_COMMENT,10,145,105,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "属性変更",IDC_BUTTON_CHANGE_PATTERN,10,165,50,14
+    PUSHBUTTON      "全削除",IDC_BUTTON_DELETE_ALL_PATTERN,65,185,50,14
+END
+
+IDD_CALIBRATION_PARAM DIALOGEX 0, 0, 119, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キャリブレーション"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,75,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,65,75,50,14
+    GROUPBOX        "空気の値",IDC_STATIC,5,5,110,30,0,WS_EX_TRANSPARENT
+    CONTROL         "有効",IDC_CHECK_AIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,15,30,15
+    EDITTEXT        IDC_EDIT_AIR,45,15,65,15,ES_AUTOHSCROLL
+    GROUPBOX        "水の値",IDC_STATIC,5,40,110,30,0,WS_EX_TRANSPARENT
+    CONTROL         "有効",IDC_CHECK_WATER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,50,30,15
+    EDITTEXT        IDC_EDIT_WATER,45,50,65,15,ES_AUTOHSCROLL
+END
+
+IDD_GSD DIALOGEX 0, 0, 103, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ガウシアンフィルタ標準偏差"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,40,45,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,55,40,45,14
+    GROUPBOX        "標準偏差",IDC_STATIC,5,5,95,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_SD,10,15,85,15,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PATTERN_ATTRIBUTE DIALOGEX 0, 0, 149, 185
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "領域の属性"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,10,15,125,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,35,165,50,15
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,90,165,50,15
+    GROUPBOX        "対象領域名",-1,5,5,135,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "ID（半角数字のみ，他と同じ物は不可）",-1,5,40,135,30,0,WS_EX_TRANSPARENT
+    GROUPBOX        "コメント",-1,5,75,135,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_POSTFIX,10,50,125,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMMENT,10,85,125,14,ES_AUTOHSCROLL
+    GROUPBOX        "教師画像の位置（上下／前後）",-1,5,110,135,50,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_LUNG_TOP_BOTTOM,10,120,125,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LUNG_FRONT_REAR,10,140,125,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CT_ATTRIBUTE DIALOGEX 0, 0, 114, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ＣＴ画像の属性"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BOTTOM_MIDDLE,10,15,95,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,5,125,50,15
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,60,125,50,15
+    GROUPBOX        "肺底部と肺中部の境界",-1,5,5,105,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_TOP_MIDDLE,10,50,95,14,ES_AUTOHSCROLL
+    GROUPBOX        "肺上部と肺中部の境界",-1,5,40,105,30,0,WS_EX_TRANSPARENT
+    CONTROL         "０番が肺底部側",IDC_BOTTOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,101,75,15
+    GROUPBOX        "患者の向き",-1,5,75,105,45,0,WS_EX_TRANSPARENT
+    CONTROL         "腹臥位",IDC_PRONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,85,75,15
+END
+
+IDD_GC DIALOGEX 0, 0, 103, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ガウス相関パラメータ"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,75,45,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,55,75,45,14
+    GROUPBOX        "最小値",IDC_STATIC,5,5,45,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_START,10,15,35,15,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "最大値",IDC_STATIC,55,5,45,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_END,60,15,35,15,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "ステップ",IDC_STATIC,5,40,45,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_STEP,10,50,35,15,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "回数",IDC_STATIC,55,40,45,30,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_COUNT,60,50,35,15,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+END
+
+IDD_DICOM_SERIES DIALOG  0, 0, 171, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "シリーズ選択"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,135,50,15
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,60,135,50,15
+    LISTBOX         IDC_LIST_SERIES,7,7,155,83,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_START,40,95,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "開始位置",IDC_STATIC,5,95,30,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MAXIMUM,120,95,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "最大枚数",IDC_STATIC,85,95,30,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPACE,120,115,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "スライス間隔",IDC_STATIC,85,115,30,15,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_SHEET_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_SHEET_REGION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_COLOR_PICKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_SHEET_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_CALIBRATION_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GSD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 96
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_PATTERN_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_CT_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 107
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_GC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 96
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DICOM_SERIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_BRUSH_15            CURSOR                  "cursor1.cur"
+IDC_BRUSH_0             CURSOR                  "brush_16.cur"
+IDC_BRUSH_7             CURSOR                  "brush_17.cur"
+IDC_POINTER             CURSOR                  "pointer.cur"
+IDC_BRUSH_1             CURSOR                  "brush_1.cur"
+IDC_BRUSH_2             CURSOR                  "brush_2.cur"
+IDC_BRUSH_3             CURSOR                  "brush_3.cur"
+IDC_BRUSH_4             CURSOR                  "brush_4.cur"
+IDC_BRUSH_5             CURSOR                  "brush_5.cur"
+IDC_BRUSH_6             CURSOR                  "brush_6.cur"
+IDC_BRUSH_8             CURSOR                  "brush_8.cur"
+IDC_BRUSH_9             CURSOR                  "brush_9.cur"
+IDC_BRUSH_10            CURSOR                  "brush_10.cur"
+IDC_BRUSH_11            CURSOR                  "brush_11.cur"
+IDC_BRUSH_12            CURSOR                  "brush_12.cur"
+IDC_BRUSH_13            CURSOR                  "brush_13.cur"
+IDC_BRUSH_14            CURSOR                  "brush_14.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,4
+ PRODUCTVERSION 1,0,1,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "肺野診断支援システム"
+            VALUE "CompanyName", "後藤研究室"
+            VALUE "FileDescription", "MedicalImage"
+            VALUE "FileVersion", "1, 0, 1, 4"
+            VALUE "InternalName", "MedicalImage"
+            VALUE "LegalCopyright", "Copyright (C) 2011 3 21"
+            VALUE "OriginalFilename", "MedicalImage.exe"
+            VALUE "ProductName", "MedicalImage"
+            VALUE "ProductVersion", "1, 0, 1, 4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
